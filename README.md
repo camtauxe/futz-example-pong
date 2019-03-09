@@ -1,4 +1,4 @@
-# Futz Blank Project
+# Futz Pong
 
 ## For Futz Version: 0.2
 
@@ -6,7 +6,7 @@
 
 **THIS IS STILL IN DEVELOPMENT**
 
-This is an example of a simple game of PONG implemented in FUTZ
+This is an example of a simple game of Pong implemented in FUTZ
 
 ## How to use
 

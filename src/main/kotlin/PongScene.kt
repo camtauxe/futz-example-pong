@@ -7,16 +7,20 @@ import javafx.scene.canvas.GraphicsContext
 
 object PongScene : Scene() {
 
-    val BOUNDS = Rect(x = -4.5, y = - 2.0, width = 9.0, height = 4.0)
+    val BOUNDS = Rect(x = -4.5, y = - 2.5, width = 9.0, height = 5.0)
 
     val player1 = Paddle(upKey = KeyCode.W,      downKey = KeyCode.S)
     val player2 = Paddle(upKey = KeyCode.UP,     downKey = KeyCode.DOWN)
+
+    val ball = Ball()
 
     val bg = PongBackground()
 
     override fun construct() {
         player1.spawn(atPos = Vector2(-4.0, -0.75))
         player2.spawn(atPos = Vector2(3.0, -0.75))
+
+        ball.spawn(atPos = Vector2(0.0, 0.0) - Vector2(0.125, 0.125))
 
         bg.spawn(atDepth = -1)
     }
